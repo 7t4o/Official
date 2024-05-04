@@ -119,7 +119,7 @@ main {
 
 main .contaner {
     display: flex;
-    width: 60%;
+    width: 865px;
     height: 100%;
     margin-left: 70px;
     align-items: center;
@@ -191,7 +191,7 @@ main p span {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    padding: 40px 0 50px;
     background-color: #403396;
 }
 
@@ -381,10 +381,9 @@ main p span {
 /*       Contact Page            */
 
 .contact {
-    height: 100vh;
     padding-top: 40px;
     background-color: #fff;
-    padding: 25px 70px 35px;
+    padding: 25px 70px 45px;
 
 }
 
@@ -407,9 +406,11 @@ main p span {
 .contact .massage {
     display: flex;
     width: 50%;
+    height: 500px;
     padding: 50px 25px;
     border: 2px solid #000;
     border-radius: 30px;
+    align-items: center;
     background-color: #403396;
 }
 
@@ -470,7 +471,6 @@ footer {
     align-items: center;
     padding: 10px 70px;
     background-color: #6752EA;
-    /* border-top: 1px solid #262626; */
 }
 
 footer .info a {
@@ -503,4 +503,85 @@ footer .icons i {
 
 footer .icons i:hover {
     color: #fff;
+}
+
+
+/*           Media Section         */
+
+@media (max-width: 1200px) {
+
+    header h1 {font-size: 16px;}
+    header nav {width: 415px;}
+    header h1::before {height: 27px; width: 27px;}
+    header h1::after {height: 4px; width: 145px; top: 52px;}
+    header nav ul a {font-size: 17px;}
+    .icons {width: 120px;}
+
+    main .contaner {width: 730px;}
+    main h3 {font-size: 40px; letter-spacing: 2px;}
+    main p {font-size: 60px;}
+    main .contaner .but {width: 475px;}
+    main .contaner .but a {height: 68px; width: 215px; font-size: 18px;}
+
+    .about_me .contaner p {width: 400px; height: 400px; font-size: 14px; font-weight: 600; margin: 0 50px;}
+    .about_me .contaner p span{font-size: 22px;}
+    .about_me .image {width: 260px; height: 360px;}
+
+    .services-items .item {width: 280px; height: 260px;}
+    .services-items .item i {font-size: 45px;}
+    .services-items .item h4 {font-size: 17px;}
+    .services-items .item p {font-size: 13px; padding: 13px;}
+
+    .contact .massage {min-width: 500px;}
+    .contact .image {display: none;}
+
+}
+
+@media (max-width: 900px) {
+    header nav {width: 380px;}
+    .services-items .item {width: 280px; height: 260px;}
+}
+
+@media (max-width: 815px) {
+    header nav {display: none;}
+    header h1::after {top: 49px;}
+
+    .about_me .contaner {flex-direction: column;}
+    .about_me .contaner p {width: 500px; height: 500px; font-size: 18px;}
+    .about_me .contaner p span {margin-left: 180px;}
+    .about_me .image {width: 355px; height: 470px;}
+
+    .services-items .item {width: 320px; height: 288px;}
+
+    .contact .massage {max-width: 400px;}
+
+    footer {padding: 10px 30px;}
+}
+
+@media (max-width: 600px) {
+    header {padding: 25px;}
+    header h1::after {left: 40px;}
+
+    main .contaner {margin: 0 50px; width: calc(100% - 100px);}
+    main .contaner .but {flex-direction: column; height: 160px; margin: 30px 0;}
+
+    .about_me .contaner p {width: 400px; height: 400px; margin: 50px; font-size: 17px; padding: 0;}
+    .about_me .contaner p span {margin-left: 104px; font-size: 21px;}
+
+    .services-items {padding: 25px 0 35px;}
+}
+
+@media (max-width: 500px) {
+    main h3 { font-size: 32px; letter-spacing: 1px;}
+    main p { font-size: 50px;}
+
+    .about_me .contaner p { width: 350px; height: 300px; margin: 25px; font-size: 13px;}
+    .about_me .contaner p span { margin-left: 163px; font-size: 19px;}
+    .about_me .image { width: 315px; height: 420px;}
+
+    .contact .massage { min-width: 375px; height: 441px; padding: 35px 18px;}
+
+    footer {padding: 10px 16px;}
+    footer .info a {font-size: 13px;}
+    footer .icons { width: 120px; font-size: 16px;}
 }
