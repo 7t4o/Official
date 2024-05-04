@@ -585,3 +585,25 @@ footer .icons i:hover {
     footer .info a {font-size: 13px;}
     footer .icons { width: 120px; font-size: 16px;}
 }
+
+@media (max-width: 400px) {
+    header {padding: 18px;}
+    header h1::after {width: 133px; top: 42px;}
+    header .icons {width: 95px;}
+
+    main .contaner {margin: 0 40px; width: calc(100% - 80px);}
+    main p {font-size: 41px; }
+
+    .about_me .contaner p { width: 300px; height: 300px; margin: 15px; font-size: 12px;}
+    .about_me .contaner p span { margin-left: 118px; font-size: 18px;}
+    .about_me .image {width: 280px; height: 370px;}
+    
+    .projects .item {max-width: 300px; margin: 15px;}
+    .projects .item img {width: 260px;}
+
+    .contact .massage {min-width: 300px; height: 400px;}
+    .contact .massage input {margin-bottom: 15px;}
+
+    footer .info a {font-size: 9px;}
+    footer .icons {width: 100px; font-size: 14px;}
+}
